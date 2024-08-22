@@ -1,0 +1,112 @@
+.sorry {
+  margin: 0;
+  width: 288px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  text-align: center;
+  display: inline-block;
+}
+.our,
+.sorry {
+  text-transform: capitalize;
+}
+.ourWebsiteIsContainer {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-31xl);
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--color-gray-100);
+}
+.weArePreparingContainer1 {
+  width: 100%;
+}
+.weArePreparingContainer {
+  width: 625px;
+  position: relative;
+  font-size: var(--font-size-6xl);
+  font-weight: 500;
+  color: var(--color-gray-200);
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.innerContent,
+.sorryParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.sorryParent {
+  gap: var(--gap-6xs);
+}
+.innerContent {
+  padding: var(--padding-99xl) 0 0;
+  box-sizing: border-box;
+  min-width: 990px;
+}
+.component6Icon {
+  width: 500px;
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.innerContentParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-75xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-61xl);
+  color: var(--color-orangered);
+  font-family: var(--font-jetbrains-mono);
+}
+@media screen and (max-width: 1600px) {
+  .component6Icon,
+  .innerContent {
+    flex: 1;
+  }
+  .innerContentParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .innerContent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ourWebsiteIsContainer,
+  .sorry {
+    font-size: var(--font-size-21xl);
+  }
+  .innerContentParent {
+    gap: var(--gap-28xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .sorry {
+    font-size: var(--font-size-5xl);
+  }
+  .ourWebsiteIsContainer {
+    font-size: var(--font-size-11xl);
+  }
+  .weArePreparingContainer {
+    font-size: var(--font-size-xl);
+  }
+  .innerContent {
+    padding-top: var(--padding-58xl);
+    box-sizing: border-box;
+  }
+  .innerContentParent {
+    gap: var(--gap-4xl);
+  }
+}
